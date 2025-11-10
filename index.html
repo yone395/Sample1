@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サンプルHTMLページ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>サンプルHTMLページ</h1>
+    <nav>
+        <a href="#about">概要</a>
+        <a href="#list">リスト</a>
+        <a href="#table">表</a>
+        <a href="#contact">お問い合わせ</a>
+    </nav>
+</header>
+
+<main>
+    <section id="about">
+        <h2>概要</h2>
+        <p>これはHTMLの基本構造を学ぶためのサンプルページです。見出し、段落、リンク、画像、リスト、表、フォームなどを含んでいます。</p>
+        <p>参考リンク: <a href="https://developer.mozilla.org/ja/docs/Web/HTML" target="_blank">HTMLのMDNドキュメント</a></p>
+        <img src="https://via.placeholder.com/200" alt="サンプル画像">
+    </section>
+
+    <section id="list">
+        <h2>リストの例</h2>
+        <h3>順序なしリスト</h3>
+        <ul>
+            <li>りんご</li>
+            <li>バナナ</li>
+            <li>みかん</li>
+        </ul>
+        <h3>順序付きリスト</h3>
+        <ol>
+            <li>ステップ1</li>
+            <li>ステップ2</li>
+            <li>ステップ3</li>
+        </ol>
+    </section>
+
+    <section id="table">
+        <h2>表の例</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>名前</th>
+                    <th>年齢</th>
+                    <th>職業</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>山田太郎</td>
+                    <td>30</td>
+                    <td>エンジニア</td>
+                </tr>
+                <tr>
+                    <td>佐藤花子</td>
+                    <td>25</td>
+                    <td>デザイナー</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>お問い合わせフォーム</h2>
+        <form action="#" method="post">
+            <label for="name">お名前:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">メッセージ:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">送信</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 サンプルページ</p>
+</footer>
+
+</body>
+</html>
 
